@@ -47,13 +47,13 @@ const Main = () => {
           className="w-full h-screen flex flex-col md:gap-10 gap-4 pt-10 md:pt-8 "
         >
           <main
-            className={`flex lg:flex-row lg:items-center flex-col items-start px-20  relative overflow-hidden md:px-16 lg:m-[120px] m-[40px]`}
+            className={`flex lg:flex-row lg:items-center flex-col items-start px-5   relative overflow-hidden md:px-16 lg:m-[120px] m-[40px]`}
           >
             <div className="flex flex-col gap-4 lg:w-1/2 justify-center lg:items-start lg:text-left w-full items-center text-center mb-5 md:mb-0">
-              <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              <h1 className="text-lg md:text-5xl font-bold mb-4">
                 {data.text1}
               </h1>
-              <p className="text-md md:text-lg mb-6">{data.text2}</p>
+              <p className="text-sm md:text-lg mb-6">{data.text2}</p>
               <button className="px-6 py-3 bg-yellow-500  text-white rounded-lg hover:bg-transparent  border border-yellow-500 ">
                {data.button}
               </button>
