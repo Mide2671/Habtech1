@@ -42,25 +42,6 @@ const Header = () => {
           </button>
         </div>
         <div className="flex items-center space-x-4">
-          <div className="bg-gray-800 text-white p-4 absolute left-0 top-16 w-full md:w-64 md:left-auto md:right-0 shadow-lg z-50">
-            <ul>
-              <li className="py-2 px-4 hover:bg-gray-700 cursor-pointer">
-                Orders
-              </li>
-              <li className="py-2 px-4 hover:bg-gray-700 cursor-pointer">
-                Settings
-              </li>
-              <li className="py-2 px-4 hover:bg-gray-700 cursor-pointer">
-                Products by Categories
-              </li>
-              <li className="py-2 px-4 hover:bg-gray-700 cursor-pointer">
-                Profile
-              </li>
-              <li className="py-2 px-4 hover:bg-gray-700 cursor-pointer">
-                Logout
-              </li>
-            </ul>
-          </div>
           <button
             onClick={toggleSearch}
             className="md:hidden text-black hover:text-gray-400"
@@ -78,7 +59,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      {isMenuVisible && (
+      {isMenuVisible ? (
         <div className="bg-gray-800 text-white p-4 absolute left-0 top-16 w-full md:w-64 md:left-auto md:right-0 shadow-lg z-50">
           <ul>
             <li className="py-2 px-4 hover:bg-gray-700 cursor-pointer">
@@ -98,6 +79,8 @@ const Header = () => {
             </li>
           </ul>
         </div>
+      ) : (
+        <div></div>
       )}
     </header>
   );
